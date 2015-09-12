@@ -1,7 +1,6 @@
 <?php
 
-// php artisan make:model --migration Post
-// php artisan migrate
+// php artisan db:seed
 
 Route::get('/', function () {
     return view('welcome');
