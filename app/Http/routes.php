@@ -1,6 +1,7 @@
 <?php
 
-// rm database/migrations/2014_10_12_100000_create_password_resets_table.php
+// php artisan make:model --migration Post
+// php artisan migrate
 
 Route::get('/', function () {
     return view('welcome');
