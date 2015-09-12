@@ -14,6 +14,5 @@ class Post extends Model
         if (!$this->exists) {
             $this->attributes['slug'] = str_slug($value);
         }
-
     }
 }
