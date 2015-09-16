@@ -1,8 +1,9 @@
 <?php
 
-// php artisan make:controller Admin\\PostController
-// php artisan make:controller Admin\\TagController
-// php artisan make:controller Admin\\UploadController --plain
+// npm install -g bower
+// npm install bower
+// gulp copyfiles
+// gulp
 
 // Blog pages
 get('/', function () {
@@ -23,6 +24,7 @@ $router->group([
     resource('admin/tag', 'TagController');
     get('admin/upload', 'UploadController@index');
 });
+
 // Logging in and out
 get('/auth/login', 'Auth\AuthController@getLogin');
 post('/auth/login', 'Auth\AuthController@postLogin');
